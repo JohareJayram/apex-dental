@@ -1,0 +1,142 @@
+.admin-body {
+  background: linear-gradient(135deg, var(--bg-dark) 0%, #0d171f 100%);
+  min-height: 100vh;
+}
+
+.admin-navbar {
+  position: relative;
+  background: rgba(18, 25, 33, 0.9);
+  padding: 1.5rem 5% !important;
+}
+
+.admin-main {
+  padding: 4rem 5%;
+}
+
+.admin-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.admin-header .section-title {
+  margin-bottom: 0.5rem;
+}
+
+.admin-header p {
+  color: rgba(232, 240, 242, 0.7);
+  font-size: 1.1rem;
+}
+
+.admin-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.appointments-wrapper {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.appointments-table th,
+.appointments-table td {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.appointments-table th {
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--apex-blue);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+}
+
+.appointments-table td {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.appointments-table tr:last-child td {
+  border-bottom: none;
+}
+
+.appointments-table tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* Badges */
+.badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+
+.badge.pending {
+  background: rgba(255, 193, 7, 0.2);
+  color: #ffc107;
+  border: 1px solid rgba(255, 193, 7, 0.3);
+}
+
+.badge.confirmed {
+  background: rgba(0, 200, 150, 0.2);
+  color: var(--apex-green);
+  border: 1px solid rgba(0, 200, 150, 0.3);
+}
+
+/* Admin Actions */
+.btn-confirm {
+  background: rgba(0, 168, 255, 0.1);
+  color: var(--apex-blue);
+  border: 1px solid var(--apex-blue);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.btn-confirm:hover {
+  background: var(--apex-blue);
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0, 168, 255, 0.4);
+}
+
+.btn-confirm:disabled {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.3);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.no-data {
+  text-align: center;
+  padding: 3rem;
+  color: rgba(232, 240, 242, 0.5);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 992px) {
+  .appointments-wrapper {
+    overflow-x: auto;
+  }
+  .appointments-table {
+    min-width: 800px;
+  }
+}

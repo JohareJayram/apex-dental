@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apex Dental | Admin Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/admin.css" />
+  </head>
+  <body class="admin-body">
+    <header class="navbar admin-navbar">
+      <div class="logo"><span class="text-blue">APEX</span> <span class="text-green">ADMIN</span></div>
+      <nav>
+        <a href="/">← Back to Site</a>
+      </nav>
+    </header>
+
+    <main class="admin-main">
+      <div class="admin-header">
+        <h1 class="section-title">Booked <span class="text-gradient">Appointments</span></h1>
+        <p>Manage and confirm patient appointment requests below.</p>
+      </div>
+
+      <div class="admin-container">
+        <div class="appointments-wrapper">
+          <table class="appointments-table">
+            <thead>
+              <tr>
+                <th>Date Requested</th>
+                <th>Patient Name</th>
+                <th>Phone Number</th>
+                <th>Service Interested</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="appointments-body">
+              <!-- Appointments will be injected here via JS -->
+            </tbody>
+          </table>
+          <div id="no-appointments" class="no-data" style="display: none;">
+            <p>No appointments booked yet.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="/admin.js"></script>
+  </body>
+</html>

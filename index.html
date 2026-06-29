@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Dental | Multi-Speciality Clinic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo"><span class="text-blue">APEX</span> <span class="text-green">DENTAL</span></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact" class="btn-primary book-appointment-btn">Book Appointment</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Scroll Sequence Section -->
+    <section class="hero-sequence">
+      <div class="sticky-container">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-overlay">
+          <div class="hero-split-layout">
+            <div class="hero-side left-side" id="hero-left">
+              <span class="hero-overline">Welcome to Apex Dental</span>
+              <h1 class="hero-title">Strong Teeth<br /><span class="text-gradient">Bright Smile</span></h1>
+            </div>
+            <div class="hero-side right-side" id="hero-right">
+              <div class="premium-glass-card">
+                <p class="hero-subtitle">We are dedicated to providing high-quality dental care tailored to your needs,
+                  ensuring every patient leaves with a confident smile.</p>
+                <div class="hero-actions">
+                  <button class="btn-primary book-appointment-btn">Book Consultation</button>
+                  <a href="#services" class="btn-secondary">Explore Treatments</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro & Stats Section -->
+    <section class="content-section stats-section">
+      <div class="container">
+        <div class="stats-intro">
+          <h2>We are dedicated to providing high-quality dental care tailored to your needs. Our team focuses on both
+            oral health and aesthetics, ensuring every patient leaves with a confident smile.</h2>
+          <button class="btn-primary book-appointment-btn">Learn More</button>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3>20K+</h3>
+            <p>Happy Patients</p>
+          </div>
+          <div class="stat-item">
+            <h3>300+</h3>
+            <p>Expert Doctors</p>
+          </div>
+          <div class="stat-item">
+            <h3>14k+</h3>
+            <p>Successful Surgeries</p>
+          </div>
+          <div class="stat-item">
+            <h3>98%</h3>
+            <p>Patient Satisfaction</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="content-section services-section">
+      <div class="blob blob-service-1"></div>
+      <div class="blob blob-service-2"></div>
+      <div class="container">
+        <h2 class="section-title">Trusted Solutions<br /><span class="text-gradient">for Every Smile</span></h2>
+        <div class="grid-services">
+          <div class="service-card">
+            <div class="service-img-wrapper">
+              <img src="/images/cosmetic.png" alt="Cosmetic Dentistry" />
+            </div>
+            <div class="service-content">
+              <h3>Cosmetic Dentistry</h3>
+              <p>Veneers, whitening, and complete smile makeovers.</p>
+              <button class="btn-icon">→</button>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-img-wrapper">
+              <img src="/images/implants.png" alt="Dental Implants" />
+            </div>
+            <div class="service-content">
+              <h3>Implants & Surgeries</h3>
+              <p>State-of-the-art permanent solutions for a confident look.</p>
+              <button class="btn-icon">→</button>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-img-wrapper">
+              <img src="/images/preventative.png" alt="Preventative Care" />
+            </div>
+            <div class="service-content">
+              <h3>Preventative Care</h3>
+              <p>Comprehensive exams and advanced cleanings.</p>
+              <button class="btn-icon">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="content-section doctors-section">
+      <div class="container">
+        <h2 class="section-title">Meet Our Expert<br /><span class="text-gradient">Dental Team</span></h2>
+        <div class="grid-doctors-4">
+          <div class="doctor-card template-doc">
+            <img src="/images/doctor_1.png" alt="Dr. Robert Smith" />
+            <div class="doc-info">
+              <h4>Dr. Robert Smith</h4>
+              <p>Lead Implantologist</p>
+            </div>
+          </div>
+          <div class="doctor-card template-doc">
+            <img src="/images/doctor_2.png" alt="Dr. Emily Davis" />
+            <div class="doc-info">
+              <h4>Dr. Emily Davis</h4>
+              <p>Cosmetic Dentist</p>
+            </div>
+          </div>
+          <div class="doctor-card template-doc">
+            <img src="/images/doctor_1.png" alt="Dr. James Wilson" />
+            <div class="doc-info">
+              <h4>Dr. James Wilson</h4>
+              <p>Orthodontist</p>
+            </div>
+          </div>
+          <div class="doctor-card template-doc">
+            <img src="/images/doctor_2.png" alt="Dr. Sarah Lee" />
+            <div class="doc-info">
+              <h4>Dr. Sarah Lee</h4>
+              <p>Pediatric Dentist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="content-section testimonials-section">
+      <div class="container">
+        <h2 class="section-title">Stories Behind<br /><span class="text-gradient">Every Smile</span></h2>
+        <div class="testimonial-layout">
+          <div class="testimonial-img">
+            <img src="/images/testimonial.png" alt="Happy Patient" />
+          </div>
+          <div class="testimonial-text">
+            <div class="quote-icon">"</div>
+            <p class="quote">I came to Apex Dental with a lot of anxiety, but the team here completely changed my
+              perspective. The care and attention to detail were unmatched. Now I have the smile I've always dreamed of,
+              and I couldn't be happier with the results!</p>
+            <div class="patient-info">
+              <div class="stars">★★★★★</div>
+              <h4>Sarah Jenkins</h4>
+              <p>Cosmetic Patient</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="content-section faq-section">
+      <div class="container">
+        <h2 class="section-title">Trusted Information<br /><span class="text-gradient">for Better Smiles</span></h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">How Often Should I Visit The Dentist? <span class="icon">+</span></button>
+            <div class="faq-answer">
+              <p>It is generally recommended to visit your dentist every 6 months for a routine check-up and
+                professional cleaning to maintain optimal oral health.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">How Can I Maintain Good Oral Hygiene At Home? <span
+                class="icon">+</span></button>
+            <div class="faq-answer">
+              <p>Brush twice a day with fluoride toothpaste, floss daily, limit sugary snacks, and use a mouthwash if
+                recommended by your dentist.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Are Dental Treatments Painful? <span class="icon">+</span></button>
+            <div class="faq-answer">
+              <p>Modern dentistry prioritizes patient comfort. With advanced techniques and local anesthesia, most
+                treatments are completely painless.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">How Long Does A Dental Implant Last? <span class="icon">+</span></button>
+            <div class="faq-answer">
+              <p>With proper care and maintenance, dental implants can last a lifetime, making them the best permanent
+                solution for missing teeth.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog / Insights Section -->
+    <section id="blog" class="content-section blog-section">
+      <div class="container">
+        <h2 class="section-title">Expert Insights<br /><span class="text-gradient">for Your Smile</span></h2>
+        <div class="grid-blog">
+          <div class="blog-card">
+            <img src="/images/blog1.png" alt="Blog 1">
+            <div class="blog-content">
+              <h4>Everything You Need to Know About Oral Care Routine</h4>
+              <div class="blog-meta"><span>Jun 15, 2026</span> <button class="btn-icon small">→</button></div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <img src="/images/blog2.png" alt="Blog 2">
+            <div class="blog-content">
+              <h4>Foods That Strengthen Your Teeth Naturally</h4>
+              <div class="blog-meta"><span>Jun 20, 2026</span> <button class="btn-icon small">→</button></div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <img src="/images/blog3.png" alt="Blog 3">
+            <div class="blog-content">
+              <h4>Electric vs Manual: Which Brush is Right for You?</h4>
+              <div class="blog-meta"><span>Jun 25, 2026</span> <button class="btn-icon small">→</button></div>
+            </div>
+          </div>
+        </div>
+        <div class="center-btn">
+          <button class="btn-primary">View All Posts</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="footer">
+      <div class="container footer-container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="logo"><span class="text-blue">APEX</span> <span class="text-green">DENTAL</span></div>
+            <p>Providing world-class dental care for a healthier, brighter smile.</p>
+            <div class="socials">
+              <button class="btn-primary book-appointment-btn">Join Our Newsletter</button>
+            </div>
+          </div>
+          <div class="footer-newsletter">
+            <h2>Start Your Smile<br /><span class="text-gradient">Journey Today</span></h2>
+            <p>Leave your email and we will get back to you with the best treatment plans.</p>
+            <div class="newsletter-form">
+              <input type="email" placeholder="Your email address">
+              <button class="btn-primary">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-links-grid">
+            <div>
+              <h4>Services</h4>
+              <a href="#">Cosmetic</a>
+              <a href="#">Implants</a>
+              <a href="#">Surgery</a>
+            </div>
+            <div>
+              <h4>Company</h4>
+              <a href="#">About Us</a>
+              <a href="#">Our Team</a>
+              <a href="#">Careers</a>
+            </div>
+            <div>
+              <h4>Contact</h4>
+              <a href="#">+1 234 567 890</a>
+              <a href="#">info@apexdental.com</a>
+              <a href="#">123 Smile Ave, NY</a>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <p>&copy; 2026 Apex Dental Multi-Speciality Clinic. All rights reserved.</p>
+            <p>Privacy Policy | Terms of Service</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Book Appointment Modal -->
+  <div id="booking-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2 class="modal-title">Request an Appointment</h2>
+      <form id="booking-form" class="booking-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" required placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" required placeholder="Your Phone Number">
+        </div>
+        <div class="form-group">
+          <label for="service">Interested Service</label>
+          <select id="service" required>
+            <option value="">Select a service...</option>
+            <option value="cosmetic">Cosmetic Dentistry</option>
+            <option value="implants">Dental Implants</option>
+            <option value="preventative">Preventative Care</option>
+            <option value="other">Other / General Consultation</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary w-100">Submit Request</button>
+      </form>
+    </div>
+  </div>
+  <!-- Bottom Navigation Bar (Mobile Only) -->
+  <nav class="bottom-nav">
+    <a href="#" class="nav-item active">
+      <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+      </svg>
+      <span>Home</span>
+    </a>
+    <a href="#services" class="nav-item">
+      <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+        <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+      </svg>
+      <span>Services</span>
+    </a>
+    <a href="#doctors" class="nav-item">
+      <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+        <circle cx="9" cy="7" r="4"></circle>
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+      </svg>
+      <span>Doctors</span>
+    </a>
+    <a href="#" class="nav-item book-appointment-btn">
+      <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+        stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+        <line x1="16" y1="2" x2="16" y2="6"></line>
+        <line x1="8" y1="2" x2="8" y2="6"></line>
+        <line x1="3" y1="10" x2="21" y2="10"></line>
+      </svg>
+      <span>Book</span>
+    </a>
+  </nav>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
